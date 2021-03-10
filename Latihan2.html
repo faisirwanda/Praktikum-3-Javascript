@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 2</title>
+</head>
+<body>
+	<!-- desaign kalkulator -->
+	<h1>Kalkulator Sederhana</h1>
+		<label><b>Bilangan 1</b></label>
+		<input type="number" id="angka1" maxlength="9"><br><br>
+		<label><b>Bilangan 2</b></label>
+		<input type="number" id="angka2"><br><br>
+		<label><b>Hasil</b></label>
+		<input type="text" id="hasil"><br><br>
+		<button onclick="ftambah()" style="width: 40px; height: 40px; font-size: 30px "><b>+</b></button>
+		<button onclick="fkurang()" style="width: 40px; height: 40px; font-size: 30px">-</button>
+		<button onclick="fkali()" style="width: 40px; height: 40px; font-size: 30px">X</button>
+		<button onclick="fbagi()" style="width: 40px; height: 40px; font-size: 30px">/</button>
+<script language="javascript">
+	//operasi matematika di kalkulator
+	var angka1 = document.getElementById("angka1");
+	var angka2 = document.getElementById("angka2");
+	var hasil = document.getElementById("hasil");
+	function ftambah(){
+		hasil.value = Number(angka1.value) + Number(angka2.value);
+	}
+	function fkurang(){
+		hasil.value = Number(angka1.value) - Number(angka2.value);
+	}
+	function fkali(){
+		hasil.value = Number(angka1.value) * Number(angka2.value);
+	}
+	function fbagi(){
+		hasil.value = Number(angka1.value) / Number(angka2.value);
+	}
+</script>
+</body>
+</html>
